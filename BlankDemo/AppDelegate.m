@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VEViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,8 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [_window makeKeyAndVisible];
     _window.backgroundColor = [UIColor whiteColor];
-//    _window.rootViewController =
+    _window.rootViewController = [VEViewController new];
+    
     
     return YES;
 }
